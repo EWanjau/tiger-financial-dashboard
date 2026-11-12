@@ -2,6 +2,8 @@
 
 This Grafana dashboard provides a real-time overview of the Bitcoin (BTC/USD) market, displaying the latest Bitcoin price, daily trading volume, and historical price movements. It uses tick data to generate one-minute OHLC candlestick charts, allowing users to monitor price fluctuations, identify market trends, and analyze trading activity over a selected time period. The dashboard also displays the latest market quotes for different financial instruments, providing a centralized view of market performance.
 
+![Grafana financial realtime dashboard showing BTC/USD last price, volume, quotes, and OHLC candles](docs/dashboard.png)
+
 ```text
 Twelve Data WebSocket ──► ingest/stream.py ──► crypto_ticks (hypertable)
 Twelve Data REST ──────► ingest/backfill.py ─► ohlcv_bars (hypertable)
